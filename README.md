@@ -22,7 +22,7 @@ go run main.go --url=http://google.com --requests=10 --concurrency=2
 
 Isso acontece porque o arquivo de iniciação do cobraCLI em root.go foi configurado para funcionar exatamente assim
 
-#### Atribuindo os valores de entrada as variaveis
+#### Atribuindo os valores de entrada as variáveis
 ```Go
 rootCmd.Flags().StringVar(&url, "url", "", "URL do serviço a ser testado (obrigatório)")
 rootCmd.Flags().IntVar(&requests, "requests", 0, "Número total de requisições (obrigatório)")
@@ -50,7 +50,7 @@ func main() {
 
 #### Buildando o projeto via Docker
 
-Para buildar o projeto usando o docker devemos respeitar as mesma exigências do cobraCLI onde as variaveis são obrigátórias para isso pasta usar o comando
+Para buildar o projeto usando o docker devemos respeitar as mesmas exigências do cobraCLI onde as variaveis são obrigátórias para isso pasta usar o comando
 
 ```go
 docker run load-tester --url=http://google.com --requests=100 --concurrency=5
